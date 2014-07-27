@@ -40,3 +40,22 @@
     -o-transition: opacity .8s ease;
     transition: opacity .8s ease;
 }
+
+#start
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo
+{
+    background-image: url("images/logo.png");
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 10%;
+    left: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
