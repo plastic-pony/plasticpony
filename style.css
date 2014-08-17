@@ -5,6 +5,8 @@
     border: 0;
     min-height: 100%;
     min-width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
 }
 
 .day
@@ -13,7 +15,17 @@
     overflow: hidden;
 }
 
-.movie
+.moviesingle
+{
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.moviedouble
 {
     width: 100%;
     height: 50%;
@@ -28,17 +40,29 @@
     width: 100%;
     height: 100%;
     z-index: 10;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: white;
     position: absolute;
     top: 0;
+    left: 0;
     opacity: 0;
     -webkit-transition: opacity .8s ease;
     -moz-transition: opacity .8s ease;
     -ms-transition: opacity .8s ease;
     -o-transition: opacity .8s ease;
     transition: opacity .8s ease;
+    padding-top: 10%;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+    .title p
+    {
+        width: 33%;
+    }
+
+.moviedouble .title
+{
+    padding-top: 3%;
 }
 
 #start
@@ -59,3 +83,54 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#nav
+{
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    color: white;
+}
+
+    .navlink:active,
+    .navlink:link,
+    .navlink:hover,
+    .navlink:visited
+    {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+#disclaimer
+{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+    #disclaimer p
+    {
+        margin: 0 auto;
+        padding-top: 10%;
+        width: 60%;
+    }
+
+    #disclaimer #end
+    {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 15%;
+        left: 48%;
+    }
+
+#footer
+{
+    padding: 50px;
+}
+
+    #footer .navlink
+    {
+        font-size: 14px;
+    }

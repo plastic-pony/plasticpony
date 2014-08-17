@@ -4,27 +4,115 @@
     <title></title>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css' />
 </head>
 <body>
-<script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <div class="day" id="start" style="background-image: url('images/000.jpg');">
         <div id="logo"></div>
+        <div id="nav">
+            Raspored:
+            <br />
+            <br />
+            <a class="navlink" href="javascript:goto('#day1')">UTORAK 25.kolovoza</a><br />
+            <a class="navlink" href="javascript:goto('#day2')">SRIJEDA 26.kolovoza</a><br />
+            <a class="navlink" href="javascript:goto('#day3')">ČETVRTAK 27.kolovoza</a><br />
+            <a class="navlink" href="javascript:goto('#day4')">PETAK 28.kolovoza</a><br />
+            <a class="navlink" href="#">SUBOTA 29.kolovoza</a>
+        </div>
     </div>
-    <div class="day">
-        <div class="movie" style="background-image: url('images/011.jpg');">
-            <div class="title" style="background-image: url('images/1.png');"></div>
-        </div><!--        
-        --><div class="movie" style="background-image: url('images/012.jpg');">
-            <div class="title" style="background-image: url('images/2.png');"></div>
-           </div>
+    <div class="day" id="day1">
+        <div class="movie moviesingle" style="background-image: url('images/1.jpg');">
+            <div class="title">
+                <h2>UTORAK 25.kolovoza - Svečano otvaranje</h2>
+                <h2>GHOSTBUSTERS</h2>
+                <p>Ako ste mislili da Bill Murray revija može proći bez Ghostbustersa, prevarili ste se. Na svečanom otvaranju Ljetnog kina dođite pogledati film zbog 
+                    kojeg smo kao klinci ususavače vezivali za leđa.</p>
+            </div>
+            <!--
+                -->
+            <!--<div class="totop">
+                    <img class="jump" src="images/top.png"/>
+                   </div>-->
+        </div>
     </div>
-    <div class="day">
-        <div class="movie" style="background-image: url('images/021.jpg');">
-            <div class="title" style="background-image: url('images/4.png');"></div>
-        </div><!--        
-        --><div class="movie" style="background-image: url('images/022.jpg');">
-            <div class="title" style="background-image: url('images/3.png');"></div>
-           </div>
+    <div class="day" id="day2">
+        <div class="movie moviedouble" style="background-image: url('images/21.jpg');">
+            <div class="title">
+                <h2>SRIJEDA 26.kolovoza</h2>
+                <h2>BROKEN FLOWERS</h2>
+                <p>Srijeda je rezervirana za tzv “ozbiljniji program” ako se sintagma “ozbiljni program” može uopće upotrijebiti u istoj rečenici sa Billom Murrayom. 
+                    Izvanredna komedija Jima Jarmuscha bok uz bok sa romantičnom dramom koja je proslavila Sofiju Coppolu.</p>
+            </div>
+        </div>
+        <!--        
+        -->
+        <div class="movie moviedouble" style="background-image: url('images/22.jpg');">
+            <div class="title">
+                <h2>SRIJEDA 26.kolovoza</h2>
+                <h2>LOST IN TRANSLATION</h2>
+                <p>Srijeda je rezervirana za tzv “ozbiljniji program” ako se sintagma “ozbiljni program” može uopće upotrijebiti u istoj rečenici sa Billom Murrayom. 
+                    Izvanredna komedija Jima Jarmuscha bok uz bok sa romantičnom dramom koja je proslavila Sofiju Coppolu.</p>
+            </div>
+        </div>
+    </div>
+    <div class="day" id="day3">
+        <div class="movie moviesingle" style="background-image: url('images/3.jpg');">
+            <div class="title">
+                <h2>ČETVRTAK 27.kolovoza</h2>
+                <h2>LIFE AQUATIC WITH STEVE ZISSOU</h2>
+                <p>Isto tako, teško je bilo napraviti program bez filma Wesa Andersona, pa smo za četvrtak odabrali jedan njegov uradak koji kao da 
+                    se uvijek nalazi u sjeni njegovih poznatijih filmova. Svakako možete očekivati živopisne likove i tipično Andersonovo OCD kadriranje.</p>
+            </div>
+        </div>
+    </div>
+    <div class="day" id="day4">
+        <div class="movie moviedouble" style="background-image: url('images/41.jpg');">
+            <div class="title">
+                <h2>PETAK 28.kolovoza</h2>
+                <h2>LARGER THAN LIFE</h2>
+                <p>Za kraj tjedna vam donosimo dvije komedije iz zlatnog razdoblja filma - 90ih. Zašto je zlatno? Pa jer smo odrastali tada, naravno. 
+                    A “Larger Than Life” ćemo uvijek pamtiti po tome kako Bill Murray pokušava biti mama jednom slonu.</p>
+            </div>
+        </div>
+        <!--        
+        -->
+        <div class="movie moviedouble" style="background-image: url('images/42.jpg');">
+            <div class="title">
+                <h2>PETAK 26.kolovoza</h2>
+                <h2>THE MAN WHO KNEW TOO LITTLE</h2>
+                <p>
+                    Za kraj tjedna vam donosimo dvije komedije iz zlatnog razdoblja filma - 90ih. Zašto je zlatno? Pa jer smo odrastali tada, naravno. 
+                   A “Larger Than Life” ćemo uvijek pamtiti po tome kako Bill Murray pokušava biti mama jednom slonu.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="day" id="disclaimer">
+        <div class="movie moviesingle" style="background-color: #3b5d69;">
+            <p>Disclaimer #1: Projekcije se projiciraju isključivo u edukativne svrhe i kao takve nisu temelj nikakvog kapitalnog prihoda, 
+                već služe samo i jedino proširivanju filmskog znanja šire i uže akademske javnosti te se, kao takve, ne naplaćuju, dok su, 
+                s druge strane, dostupne samo članovima Kluba svih razina (boja) u koje, naravno, ulaze i zelene članske iskaznice koje se 
+                mogu, uz malo volje (što vaše, što naše), izraditi u Klubu prije ili tijekom bilo kojeg programa, uključujući i projekcije.
+                <br />
+                Drugim riječima: trebate imati zelenu iskaznicu sa sobom! Ako uopće nemate zelenu iskaznicu, možete ju izraditi na ulazu u 
+                KSET svaki dan prije projekcije. Izrada se naplaćuje 5,00 kn, a takva iskaznica vrijedi beskonačno dugo. Zato čuvajte svoju 
+                zelenu iskaznicu u novčaniku at all times, nikad ne znate kad ćete slučajno naletiti do KSET-a.
+                <br />
+                Disclaimer #2: Mi u KSET-u jako volimo svoje susjede, a oni jako vole spavati. Molimo vas da imate razumijevanja (ljudi 
+                imaju poslove i djecu i sranja) i ne budete pretjerano bučni u kasne sate, bilo za vrijeme projekcije, bilo nakon. Thank you 
+                for your cooperation.
+                <br />
+                Nije disclaimer, ali je tu: Filmovi se puštaju u svojem nativnom jeziku, s engleskim titlovima (osim domaćih filmova, oni 
+                nemaju nikakve titlove). Čak i kad je nativni jezik engleski, titlovi su engleski. Eto, da ne brinete.</p>
+            <img id="end" src="images/logo.png" />
+            <p>Prethodna izdanja:</p>
+            <div id="footer">
+                <a class="navlink" href="#">LJ K 2013.</a>|
+                <a class="navlink" href="#">LJ K 2012.</a>|
+                <a class="navlink" href="#">LJ K 2011.</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
