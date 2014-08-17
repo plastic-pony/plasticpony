@@ -7,7 +7,18 @@
     })
     $(".movie").mouseleave(function () {
         $(this).children('.title').css('opacity', 0);
-  });
+    });
+
+    $(".totop").click(function () {
+        $("html, body").animate({
+            scrollTop: 0}, 1500);
+    });
+
+    $("#end").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1500);
+    });
 
 });
 
