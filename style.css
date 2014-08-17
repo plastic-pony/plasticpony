@@ -103,6 +103,29 @@
     text-decoration: none;
 }
 
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+   0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .totop
 {
     background-image: url("images/top.png");
@@ -113,6 +136,12 @@
     bottom: 4%;
     background-size: contain;
     cursor: pointer;
+    -webkit-animation: blink 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1.5s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1.5s;
+    -o-animation-iteration-count: infinite;
 }
 
 #disclaimer
