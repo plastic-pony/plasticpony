@@ -1,6 +1,7 @@
 ﻿var pitanja = [prvo, drugo, trece, cetvrto, peto, sesto, sedmo, osmo, deveto, deseto];
 var trenutnoPitanje = 0;
 var brojacZ = 0;
+var FB;
 
 window.fbAsyncInit = function () {
     FB.init({
@@ -8,8 +9,6 @@ window.fbAsyncInit = function () {
         xfbml: true,
         version: 'v2.2'
     });
-
-    load_question();
 };
 
 function onLogin(response) {
