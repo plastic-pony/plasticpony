@@ -2,9 +2,23 @@
 var trenutnoPitanje = 0;
 var brojacZ = 0;
 
-$(document).ready(function () {
+window.fbAsyncInit = function () {
+    FB.init({
+        appId: '747185868693965',
+        xfbml: true,
+        version: 'v2.2'
+    });
+
     load_question();
-});
+};
+
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 function next() {
     if ($("#question-holder input[type='radio']:checked").val() != undefined) {
