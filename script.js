@@ -30,6 +30,12 @@ function load_question() {
         trenutnoPitanje++;
     }
     else {
-        console.log(brojacZ);
+        $("#radio").empty();
+        if (brojacZ >= 5) {
+            $("#question").text("Samopouzdana si i vrckava i ekstra kul mačka. U srednjoj su se svi htjeli družit s tobom! Ti ne uzimaš 'ne' kao odgovor, što znači da je više-manje sve uvijek po tvom. Većina ljudi se umori samo gledajući u tvoj raspored. Impulzivna si i ponekad te to dovede u neprilike, ali svi znaju da se samo zabavljaš.");
+        }
+        else {
+            $("#question").text("Imaš istančan smisao za humor koji gotovo nitko drugi ne razumije. Čula si za sve bendove prije nego su ih počeli puštat na radiju. Nakon dvije pive postaješ središte svakog partija, ali nitko nažalost ne dijeli s tobom to mišljenje. Uvijek pobjeđuješ u Magic: the Gathering-u.");
+        }
     }
 };
