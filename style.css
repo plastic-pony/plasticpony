@@ -74,6 +74,7 @@
         .container #question-holder input
         {
             margin-left: 20px;
+            cursor: pointer;
         }
 
     .container #next
