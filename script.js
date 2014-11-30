@@ -39,3 +39,7 @@ function load_question() {
         }
     }
 };
+
+function start() {
+    $("#start-screen").hide();
+};

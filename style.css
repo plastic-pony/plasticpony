@@ -12,6 +12,27 @@
     background-color: #cfffe4;
 }
 
+    .container #start-screen
+    {
+        width: 760px;
+        height: 686px;
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(images/cover.jpg);
+    }
+
+        .container #start-screen #start
+        {
+            width: 150px;
+            height: 55px;
+            cursor: pointer;
+            position: absolute;
+            top: 430px;
+            left: 296px;
+        }
+
     .container #header
     {
         background-image: url(images/spliff.jpg);
