@@ -37,6 +37,7 @@
     {
         background-image: url(images/spliff.jpg);
         height: 186px;
+        display: none;
     }
 
     .container #white-bkg
@@ -47,6 +48,7 @@
         margin: 0 auto;
         position: relative;
         border-radius: 5pc 5pc 16pc 16pc;
+        display: none;
     }
 
     .container #question-holder
