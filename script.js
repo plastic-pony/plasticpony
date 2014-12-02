@@ -32,6 +32,7 @@ function load_question() {
     else {
         $("#radio").empty();
         $("#header").css("background-image", "url(images/end.jpg)");
+        $(".container").css("background-color", "#ccfed9");
         if (brojacZ >= 5) {
             $("#question").text("Samopouzdana si i vrckava i ekstra kul mačka. U srednjoj su se svi htjeli družit s tobom! Ti ne uzimaš 'ne' kao odgovor, što znači da je više-manje sve uvijek po tvom. Većina ljudi se umori samo gledajući u tvoj raspored. Impulzivna si i ponekad te to dovede u neprilike, ali svi znaju da se samo zabavljaš.");
         }
