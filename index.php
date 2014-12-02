@@ -3,8 +3,8 @@
 <head>
     <title></title>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://plasticpony.github.io/data.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://plasticpony.github.io/style.css" />
+    <script type="text/javascript" src="data.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <div
@@ -41,6 +41,6 @@
             <div id="next" onclick="next()">Dalje</div>
         </div>
     </div>
-    <script type="text/javascript" src="http://plasticpony.github.io/script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
