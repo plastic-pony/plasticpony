@@ -1,38 +1,43 @@
-﻿body
+﻿html, body
 {
     margin: 0;
     padding: 0;
     border: 0;
+    height: 100%;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
 }
 
 .container
 {
-    width: 1160px;
+    width: 1024px;
     margin: 0 auto;
-}
-
-#left-menu
-{
-    width: 240px;
     height: 100%;
-    background-color: red;
-    position: fixed;
-    opacity: 0.8;
 }
 
-ul#poni
+ul.images
 {
+    padding: 0;
+    margin: 0;
+    width: 33%;
     list-style: none;
-    margin: 0 auto;
+    height: 100%;
+    overflow-y: auto;
+    float: left;
+    -ms-overflow-style: none;
 }
 
-    ul#poni li
+    ul.images li
     {
-        width: 150px;
-        height: 150px;
-        background-position: center;
+        width: 100%;
+        height: 328px;
+        margin: 10px;
+        box-sizing: border-box;
         background-size: contain;
-        background-repeat: no-repeat;
-        margin: 20px;
-        float: left;
+    }
+
+    ul.images::-webkit-scrollbar
+    {
+        display: none;
     }

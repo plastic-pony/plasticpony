@@ -1,7 +1,12 @@
-﻿var images = [img001, img002, img003, img004, img005, img006, img007, img008, img009, img010, img011, img012, img013, img014, img015, img016];
+﻿var imagesL = [img001, img004, img007, img010, img013, img016, img022];
+var imagesC = [img002, img005, img008, img011, img014, img017, img020];
+var imagesR = [img003, img006, img009, img012, img015, img019, img021];
 
-for (var i = images.length-1; i >= 0; i--) {
-    $("#poni").append("<li></li>");
-    console.log(i);
-    $("#poni li:last-child").css("background-image", "url(" + images[i].url + ")");
+for (var i = imagesL.length - 1; i >= 0; i--) {
+    $("#right").append("<li></li>");
+    $("#center").append("<li></li>");
+    $("#left").append("<li></li>");
+    $("#left li:last-child").css("background-image", "url(" + imagesL[i].url + ")");
+    $("#center li:last-child").css("background-image", "url(" + imagesC[i].url + ")");
+    $("#right li:last-child").css("background-image", "url(" + imagesR[i].url + ")");
 };
