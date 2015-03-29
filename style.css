@@ -94,6 +94,12 @@
     color: #fff;
 }
 
+.white, .white a
+{
+    background-color: #fff;
+    color: #000;
+}
+
 #change
 {
     position: fixed;
