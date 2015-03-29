@@ -1,88 +1,56 @@
-﻿var img001 = {
-    url: "images/13-08-31.jpg",
+﻿var me = {
+    img1: "images/kino1.jpg",
+    img2: "images/kino2.jpg",
+    img3: "images/kino3.jpg",
+    opis: "Website for an outside summer movie theater program held annually at KSET, Zagreb. This years' topic were Bill Murray's movies so the website itself focuses on some of the prominent movie stills and displays minimal necessary data."
 }
 
-var img002 = {
-    url: "images/13-09-01.jpg",
+var kino = {
+    ime: "Kino KSET",
+    url: "http://kino.kset.org",
+    urltxt: "kino.kset.org",
+    img1: "images/kino1.jpg",
+    img2: "images/kino2.jpg",
+    img3: "images/kino3.jpg",
+    opis: "Website for an outside summer movie theater program held annually at KSET, Zagreb. This years' topic were Bill Murray's movies so the website itself focuses on some of the prominent movie stills and displays minimal necessary data."
 }
 
-var img003 = {
-    url: "images/13-09-02.jpg",
+var sven = {
+    ime: "Balance",
+    url: "http://svengrbec.github.io/",
+    urltxt: "svengrbec.github.io",
+    img1: "images/sven1.jpg",
+    img2: "images/sven2.jpg",
+    img3: "images/sven3.jpg",
+    opis: "This website was visualised as a part of a project and its layout was highly taken into account during the content making process. Centre point are two independent image galleries."
 }
 
-var img004 = {
-    url: "images/13-09-03.jpg",
+var franko = {
+    ime: "Low Poly Pessimism",
+    url: "http://frankodujmic.github.io/",
+    urltxt: "frankodujmic.github.io",
+    img1: "images/franko1.jpg",
+    img2: "images/franko2.jpg",
+    img3: "images/franko3.jpg",
+    opis: "Showcasing website for a an animator friend who wanted to be able to display his new series of sad low poly animals. Very simple layout with basic left-right navigation through the gallery and dynamically calculated backgrounds."
 }
 
-var img005 = {
-    url: "images/13-09-04.jpg",
+var shocktoe = {
+    ime: "Shock Toe",
+    url: "https://www.youtube.com/watch?v=260goQrc2tc&index=1&list=PLqFR39kZYuhiiT8ZlHKsR09e_nPYrh66p",
+    urltxt: "YouTube Playlist",
+    img1: "images/shock.jpg",
+    img2: "images/shock1.jpg",
+    img3: "images/shock2.jpg",
+    opis: "This is a talk show I created, produced and edited under KSET. It welcomes young bands of the current Zagreb's music scene and slightly mocks them in an awkward way making everyone feel uncomfortable."
 }
 
-var img006 = {
-    url: "images/13-09-08.jpg",
-}
-
-var img007 = {
-    url: "images/13-10-01.jpg",
-}
-
-var img008 = {
-    url: "images/13-10-23.jpg",
-}
-
-var img009 = {
-    url: "images/13-12-01.jpg",
-}
-
-var img010 = {
-    url: "images/13-12-08.jpg",
-}
-
-var img011 = {
-    url: "images/14-03-19.jpg",
-}
-
-var img012 = {
-    url: "images/14-03-30.jpg",
-}
-
-var img013 = {
-    url: "images/14-05-24.jpg",
-}
-
-var img014 = {
-    url: "images/14-06-16.jpg",
-}
-
-var img015 = {
-    url: "images/14-11-10.jpg",
-}
-
-var img016 = {
-    url: "images/15-01-16.jpg",
-}
-
-var img017 = {
-    url: "images/15-01-18.jpg",
-}
-
-var img018 = {
-    url: "images/15-01-26.jpg",
-}
-//not used!
-
-var img019 = {
-    url: "images/15-02-04.jpg",
-}
-
-var img020 = {
-    url: "images/15-02-05.jpg",
-}
-
-var img021 = {
-    url: "images/15-02-18.jpg",
-}
-
-var img022 = {
-    url: "images/15-02-20.jpg",
+var dogs = {
+    ime: "Waiting Dogs",
+    url: "",
+    urltxt: "website in progress",
+    img1: "images/dog1.jpg",
+    img2: "images/dog2.jpg",
+    img3: "images/dog3.jpg",
+    opis: "My ongoing photography project is capturing dogs left on the street to wait for their owners, usually in front of the stores or caffes. "
 }

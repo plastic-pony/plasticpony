@@ -3,20 +3,46 @@
 <head>
     <title></title>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="data.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body>
-    <div class="container">
-        <div id="header"></div>
-        <ul class="images" id="left"></ul>
-        
-        <ul class="images" id="center"></ul>
-        
-        <ul class="images" id="right"></ul>
+<body class="black">
+    <div id="change" onclick="change();">
+        <div id="blackOut" class="black"></div>
+        <div id="blackIn" class="black"></div>
     </div>
+    <div class="container">
+        <div class="leftMenu black">
+            <p>Izabela Bratovic</p>
+            <ul>
+                <li>
+                    <img src="images/kino.PNG" onclick="load('1');" /></li>
+                <li>
+                    <img src="images/sven.PNG" onclick="load('2');" /></li>
+                <li>
+                    <img src="images/franko1.jpg" onclick="load('3');" /></li>
+                <li>
+                    <img src="images/shock.jpg" onclick="load('4');" /></li>
+                <li>
+                    <img src="images/dog3.jpg" onclick="load('5');" /></li>
+            </ul>
+        </div>
 
+        <div class="rightContent black">
+            <div>
+                > front end web developer<br />
+                > html, css, javascript, jquery<br />
+                > php, c#<br />
+                > photography, video<br />
+            </div>
+            <div id="blink">
+                > <span class="blink">_</span>
+            </div>
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

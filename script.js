@@ -1,12 +1,24 @@
-﻿var imagesL = [img001, img004, img007, img010, img013, img016, img022];
-var imagesC = [img002, img005, img008, img011, img014, img017, img020];
-var imagesR = [img003, img006, img009, img012, img015, img019, img021];
+﻿var projekti = [me, kino, sven, franko, shocktoe, dogs];
 
-for (var i = imagesL.length - 1; i >= 0; i--) {
-    $("#right").append("<li></li>");
-    $("#center").append("<li></li>");
-    $("#left").append("<li></li>");
-    $("#left li:last-child").css("background-image", "url(" + imagesL[i].url + ")");
-    $("#center li:last-child").css("background-image", "url(" + imagesC[i].url + ")");
-    $("#right li:last-child").css("background-image", "url(" + imagesR[i].url + ")");
+function load(position) {
+    var projekt = "<div class='project'><p class='name'>> " + projekti[position].ime + "</p>";
+    projekt += "<img src=" + projekti[position].img1 + " /><img src=" + projekti[position].img2 + " /><img src=" + projekti[position].img3 + " />";
+    projekt += "<p class='desc'>" + projekti[position].opis + "</p><p>> <a href='" + projekti[position].url + "' class='url'";
+    if (projekti[position].url != "") {
+        projekt += "target='_blank'";
+    }
+    projekt += "> " + projekti[position].urltxt + "</a></p></div><div id='blink'>> <span class='blink'>_</span></div>";
+    //$("#blink").remove();
+    $(".rightContent").html("").append(projekt);
+};
+
+function change() {
+    if ($("body").hasClass("black")) {
+        $(".black").addClass("white");
+        $(".white").removeClass("black");
+    }
+    else {
+        $(".white").addClass("black");
+        $(".black").removeClass("white");
+    }
 };

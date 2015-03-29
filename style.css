@@ -5,7 +5,7 @@
     border: 0;
     height: 100%;
     position: relative;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cabin', sans-serif;
     overflow: hidden;
 }
 
@@ -16,28 +16,144 @@
     height: 100%;
 }
 
-ul.images
+    .container .leftMenu
+    {
+        font-size: 20px;
+        width: 18%;
+        padding-top: 50px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+    }
+
+        .container .leftMenu p
+        {
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+        .container .leftMenu ul
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100px;
+        }
+
+            .container .leftMenu ul li
+            {
+                width: 100%;
+                cursor: pointer;
+                margin-bottom: 10px;
+                margin-left: 84px;
+            }
+
+                .container .leftMenu ul li img
+                {
+                    width: 100%;
+                }
+
+    .container .rightContent
+    {
+        width: 80%;
+        display: inline-block;
+        min-height: 600px;
+        vertical-align: top;
+        padding-top: 114px;
+    }
+
+        .container .rightContent .project > *
+        {
+            display: block;
+        }
+
+        .container .rightContent .project p
+        {
+            margin: 0;
+        }
+
+        .container .rightContent .project a
+        {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container .rightContent .project img
+        {
+            display: inline-block;
+            vertical-align: top;
+            width: 32.5%;
+            margin: 20px 3px;
+        }
+
+/* change colour */
+
+.black, .black a
 {
-    padding: 0;
-    margin: 0;
-    width: 33%;
-    list-style: none;
-    height: 100%;
-    overflow-y: auto;
-    float: left;
-    -ms-overflow-style: none;
+    background-color: #000;
+    color: #fff;
 }
 
-    ul.images li
+#change
+{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+    #change #blackOut
     {
-        width: 100%;
-        height: 328px;
-        margin: 10px;
-        box-sizing: border-box;
-        background-size: contain;
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #000;
+        opacity: 0.1;
     }
 
-    ul.images::-webkit-scrollbar
+    #change #blackIn
     {
-        display: none;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 25%;
+        left: 25%;
+        background-color: #000;
+        border-radius: 12px;
+        opacity: 0.8;
     }
+
+        #change #blackOut.black, #change #blackIn.black
+        {
+            background-color: #fff;
+        }
+
+        #change #blackOut.white, #change #blackIn.white
+        {
+            background-color: #000;
+        }
+
+/* blinking underscore */
+.blink
+{
+    animation: blink 0.5s steps(5, start) infinite;
+    -webkit-animation: blink 0.5s steps(5, start) infinite;
+}
+
+@keyframes blink
+{
+    to
+    {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink
+{
+    to
+    {
+        visibility: hidden;
+    }
+}
