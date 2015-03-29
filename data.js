@@ -2,7 +2,7 @@
     img1: "images/kino1.jpg",
     img2: "images/kino2.jpg",
     img3: "images/kino3.jpg",
-    opis: "Website for an outside summer movie theater program held annually at KSET, Zagreb. This years' topic were Bill Murray's movies so the website itself focuses on some of the prominent movie stills and displays minimal necessary data."
+    opis: "Website for an outdoor summer movie theater program held annually at KSET, Zagreb. This years' topic were Bill Murray's movies so the website itself focuses on some of the prominent movie stills and displays minimal necessary data."
 }
 
 var kino = {
