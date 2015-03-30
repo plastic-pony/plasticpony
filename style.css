@@ -30,6 +30,7 @@
         {
             text-align: right;
             text-transform: uppercase;
+            cursor: pointer;
         }
 
         .container .leftMenu ul

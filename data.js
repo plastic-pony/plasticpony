@@ -1,8 +1,11 @@
 ﻿var me = {
-    img1: "images/kino1.jpg",
-    img2: "images/kino2.jpg",
-    img3: "images/kino3.jpg",
-    opis: "Website for an outdoor summer movie theater program held annually at KSET, Zagreb. This years' topic were Bill Murray's movies so the website itself focuses on some of the prominent movie stills and displays minimal necessary data."
+    desc1: "this is a short portfolio displaying freelance projects that I designed and built.",
+    desc2: "as a part of a team at my previous and current workplaces I worked on various projects including static html websites, asp.net websites and web applications, wordpress websites, newsletters",
+    img1: "images/me3.jpg",
+    img2: "images/me2.jpg",
+    img3: "images/me1.jpg",
+    url: "bratovic_izabela_europass_cv.pdf",
+    urltxt: "My CV",
 }
 
 var kino = {
@@ -12,7 +15,7 @@ var kino = {
     img1: "images/kino1.jpg",
     img2: "images/kino2.jpg",
     img3: "images/kino3.jpg",
-    opis: "Website for an outside summer movie theater program held annually at KSET, Zagreb. This years' topic were Bill Murray's movies so the website itself focuses on some of the prominent movie stills and displays minimal necessary data."
+    opis: "Website for an outdoor summer movie theater program held annually at KSET, Zagreb. This years' topic were Bill Murray's movies so the website itself focuses on some of the prominent movie stills and displays minimal necessary data."
 }
 
 var sven = {
@@ -27,12 +30,12 @@ var sven = {
 
 var franko = {
     ime: "Low Poly Pessimism",
-    url: "http://frankodujmic.github.io/",
-    urltxt: "frankodujmic.github.io",
+    url: "http://lowpolypessimism.github.io/",
+    urltxt: "lowpolypessimism.github.io",
     img1: "images/franko1.jpg",
     img2: "images/franko2.jpg",
     img3: "images/franko3.jpg",
-    opis: "Showcasing website for a an animator friend who wanted to be able to display his new series of sad low poly animals. Very simple layout with basic left-right navigation through the gallery and dynamically calculated backgrounds."
+    opis: "Showcasing website for a an animator who wanted to be able to display his new series of sad low poly animals. Very simple layout with basic left-right navigation through the gallery and dynamically calculated backgrounds."
 }
 
 var shocktoe = {
