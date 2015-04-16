@@ -1,18 +1,15 @@
-﻿body {
+﻿html, body {
+    width: 100%;
+    height: 100%;
 }
 
-.col1 {
-    background: #5C7080;
+.body-content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
-.col2 {
-    background: #6BC0FF;
-}
-
-.col3 {
-    background: #E8AA4C;
-}
-
-.col4 {
-    background: #FF384E;
+#map-canvas {
+    width: 100%;
+    height: 100%;
 }
