@@ -105,7 +105,7 @@ h2 {
         background-image: url(../images/movie11.jpg);
     }
 
-        .firstmovie#movie11:hover {
+        .firstmovie#movie11:hover, .firstmovie#movie11.hovered {
             background-image: url(../images/movie11-color.jpg);
         }
 
@@ -113,7 +113,7 @@ h2 {
         background-image: url(../images/movie21.jpg);
     }
 
-        .firstmovie#movie21:hover {
+        .firstmovie#movie21:hover, .firstmovie#movie21.hovered {
             background-image: url(../images/movie21-color.jpg);
         }
 
@@ -121,7 +121,7 @@ h2 {
         background-image: url(../images/movie31.jpg);
     }
 
-        .firstmovie#movie31:hover {
+        .firstmovie#movie31:hover, .firstmovie#movie31.hovered {
             background-image: url(../images/movie31-color.jpg);
         }
 
@@ -159,6 +159,10 @@ h2 {
         .secondmovie#movie32:hover {
             background-image: url(../images/movie32-color.jpg);
         }
+
+#m11, m#12, #m21, #m22, #m31, #m32{
+    cursor: pointer;
+}
 
 .naslovna {
     background-image: url(../images/naslovna.png);
