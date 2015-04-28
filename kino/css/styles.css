@@ -110,6 +110,8 @@ h2 {
     top: 28%;
     left: 30%;
     transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
     .secondmovie#movie12 {
