@@ -3,64 +3,104 @@
 <head>
     <title>Projekcije</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link href="css/styles.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-2 naslovna"></div>
-            <div class="col-xs-8">
-                <div class="row">
-                    <div class="col-xs-4 cal">
-                        <ul>
-                            <li class="movie">11</li>
-                            <li>12</li>
-                            <li>13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-4 cal">
-                        <ul>
-                            <li class="movie">18</li>
-                            <li>19</li>
-                            <li>20</li>
-                            <li>21</li>
-                            <li>22</li>
-                            <li>23</li>
-                            <li>24</li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-4 cal">
-                        <ul>
-                            <li class="movie">25</li>
-                            <li>26</li>
-                            <li>27</li>
-                            <li>28</li>
-                            <li>29</li>
-                            <li>30</li>
-                            <li>31</li>
-                        </ul>
-                    </div>
+    <div class="container">
+        <div class="naslovna"></div>
+        <div class="movies">
+            <div class="row">
+                <div class="cal">
+                    <ul>
+                        <li class="active">11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                    </ul>
+                </div>
+                <div class="cal">
+                    <ul>
+                        <li class="active">18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                    </ul>
+                </div>
+                <div class="cal">
+                    <ul>
+                        <li class="active">25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-xs-2 rep"></div>
+            <div class="row">
+                <div class="cal">
+                    <h2>Mladi</h2>
+                    <table class="naslovi">
+                        <tr>
+                            <td>Kids</td>
+                            <td>19h</td>
+                        </tr>
+                        <tr>
+                            <td>Easy A</td>
+                            <td>21h</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cal">
+                    <h2>Strip</h2>
+                    <table class="naslovi">
+                        <tr>
+                            <td>Crumb</td>
+                            <td>19h</td>
+                        </tr>
+                        <tr>
+                            <td>Sin City</td>
+                            <td>21h</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cal">
+                    <h2>Obitelj</h2>
+                    <table class="naslovi">
+                        <tr>
+                            <td>Festen</td>
+                            <td>19h</td>
+                        </tr>
+                        <tr>
+                            <td>The Incredibles</td>
+                            <td>21h</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="imgs">
+                <div class="division">                    
+                    <div id="movie11" class="firstmovie"></div>
+                    <div id="movie12" class="secondmovie"></div>
+                </div>
+
+                <div class="division"></div>
+
+                <div class="division"></div>
+            </div>
         </div>
+        <div class="rep"></div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
 </body>
 </html>

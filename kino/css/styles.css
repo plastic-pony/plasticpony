@@ -1,26 +1,144 @@
-﻿html, body
-{
-    width: 100%;
-    height: 100%;
+﻿html, body {
     font-family: Arial;
     color: #fff;
 }
 
-.container-fluid, .row, .naslovna, .rep
-{
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: normal;
+    display: inline-block;
+    padding: 2px 1px;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    height: 370px;
+}
+
+.naslovna, .movies, .rep {
+    float: left;
     height: 100%;
 }
 
-.naslovna
-{
+.naslovna {
+    width: 22.22%;
+}
+
+.rep {
+    width: 11.38%;
+}
+
+.movies {
+    width: 66.4%;
+}
+
+    .movies .row {
+        height: 11.5%;
+        background-color: #000;
+    }
+
+        .movies .row .cal {
+            float: left;
+            width: 33.333333333%;
+            height: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+            .movies .row .cal ul {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                list-style: none;
+                padding: 0;
+            }
+
+                .movies .row .cal ul li {
+                    float: left;
+                    height: 100%;
+                    width: 14.28%;
+                    text-align: center;
+                    font-size: 22px;
+                    padding-top: 2%;
+                    box-sizing: border-box;
+                }
+
+                    .movies .row .cal ul li.active {
+                        background-color: #fff;
+                        color: #000;
+                    }
+
+.naslovi {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+    border-spacing: 0;
+}
+
+    .naslovi table tr td:first-child {
+        padding-right: 3px;
+    }
+
+.division {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.firstmovie {
+    width: 100%;
+    height: 100%;
+}
+
+    .firstmovie#movie11 {
+        background-image: url(../images/movie11.jpg);
+    }
+
+        .firstmovie#movie11:hover {
+            background-image: url(../images/movie11-color.jpg);
+        }
+
+.secondmovie {
+    width: 142%;
+    height: 142%;
+    position: absolute;
+    top: 28%;
+    left: 30%;
+    transform: rotate(45deg);
+}
+
+    .secondmovie#movie12 {
+        background-image: url(../images/movie12.png);
+    }
+
+        .secondmovie#movie12:hover {
+            background-image: url(../images/movie12-color.png);
+        }
+
+
+.imgs {
+    height: 77%;
+    width: 100%;
+}
+
+    .imgs .division {
+        width: 33%;
+        height: 100%;
+    }
+
+.naslovna {
     background-image: url(../images/naslovna.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top right;
 }
 
-.rep
-{
+.rep {
     background-image: url(../images/rep.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -28,57 +146,24 @@
     position: relative;
 }
 
-.cal
-{
-    height: 50px;
-    background-color: #000;
-    padding: 0;
-}
-
-    .cal ul
-    {
-        width: 100%;
-        height: 100%;
-        list-style: none;
-        padding: 0;
-    }
-
-        .cal ul li
-        {
-            float: left;
-            width: 14.28%;
-            height: 100%;
-            box-sizing: border-box;
-            padding: 1% 2%;
-            font-size: 2em;
-        }
-
-            .cal ul li.movie
-            {
-                background-color: #fff;
-                color: #000;
-            }
-
-@media all and (max-width: 1200px)
-{ /* screen size until 1200px */
-    body
-    {
+@media all and (max-width: 1300px) { /* screen size until 1200px */
+    body {
         font-size: 1.2em; /* 1.5x default size */
     }
+
+    .container {
+        width: 1000px;
+    }
 }
 
-@media all and (max-width: 1000px)
-{ /* screen size until 1000px */
-    body
-    {
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    body {
         font-size: 1em; /* 1.2x default size */
     }
 }
 
-@media all and (max-width: 500px)
-{ /* screen size until 500px */
-    body
-    {
+@media all and (max-width: 500px) { /* screen size until 500px */
+    body {
         font-size: 0.8em; /* 0.8x default size */
     }
 }
