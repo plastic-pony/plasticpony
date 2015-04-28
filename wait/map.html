@@ -18,6 +18,24 @@
 
 </head>
 <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://plasticpony.github.io/wait/"><img class="dogBack" src="images/dog-grey.png" /></a></div>
+            <div class="navbar-collapse collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Say Hi!</a></li>
+                    <li><a href="#">Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid body-content">
         <script type="text/javascript"
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSximQ7ZGiSgOSiJi6p4Tbu0tsG6vJ_T4">
@@ -67,12 +85,6 @@
 
                 var image = "images/dogmap.png";
 
-                var marker = new google.maps.Marker({
-                    position: { lat: 44.407360, lng: 8.932683 },
-                    map: map,
-                    icon: image
-                });
-
                 var mapOptions = {
                     center: { lat: 45.8167, lng: 15.9833 },
                     zoom: 7,
@@ -108,15 +120,6 @@
             ];
 
             function setMarkers(map, locations) {
-                // Add markers to the map
-
-                // Marker sizes are expressed as a Size of X,Y
-                // where the origin of the image (0,0) is located
-                // in the top left of the image.
-
-                // Origins, anchor positions and coordinates of the marker
-                // increase in the X direction to the right and in
-                // the Y direction down.
                 var image = {
                     url: 'images/dogmap.png'
                 };
