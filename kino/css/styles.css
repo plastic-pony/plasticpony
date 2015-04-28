@@ -83,11 +83,17 @@ h2 {
         padding-right: 3px;
     }
 
-.division {
+.imgs {
+    height: 77%;
     width: 100%;
+}
+
+.division {
+    width: 33.333333%;
     height: 100%;
     position: relative;
     overflow: hidden;
+    float: left;
 }
 
 .firstmovie {
@@ -103,11 +109,27 @@ h2 {
             background-image: url(../images/movie11-color.jpg);
         }
 
+    .firstmovie#movie21 {
+        background-image: url(../images/movie21.jpg);
+    }
+
+        .firstmovie#movie21:hover {
+            background-image: url(../images/movie21-color.jpg);
+        }
+
+    .firstmovie#movie31 {
+        background-image: url(../images/movie31.jpg);
+    }
+
+        .firstmovie#movie31:hover {
+            background-image: url(../images/movie31-color.jpg);
+        }
+
 .secondmovie {
     width: 142%;
     height: 142%;
     position: absolute;
-    top: 28%;
+    top: 29%;
     left: 30%;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -115,23 +137,28 @@ h2 {
 }
 
     .secondmovie#movie12 {
-        background-image: url(../images/movie12.png);
+        background-image: url(../images/movie12.jpg);
     }
 
         .secondmovie#movie12:hover {
-            background-image: url(../images/movie12-color.png);
+            background-image: url(../images/movie12-color.jpg);
         }
 
-
-.imgs {
-    height: 77%;
-    width: 100%;
-}
-
-    .imgs .division {
-        width: 33%;
-        height: 100%;
+    .secondmovie#movie22 {
+        background-image: url(../images/movie22.jpg);
     }
+
+        .secondmovie#movie22:hover {
+            background-image: url(../images/movie22-color.jpg);
+        }
+
+    .secondmovie#movie32 {
+        background-image: url(../images/movie32.jpg);
+    }
+
+        .secondmovie#movie32:hover {
+            background-image: url(../images/movie32-color.jpg);
+        }
 
 .naslovna {
     background-image: url(../images/naslovna.png);
