@@ -263,6 +263,10 @@ h2 {
     .naslovi {
         font-size: 8px;
     }
+
+    .textbox{
+        width: 768px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -286,10 +290,18 @@ h2 {
     .naslovi {
         font-size: 6px;
     }
+
+    .textbox{
+        width: 500px;
+    }
 }
 
 @media all and (max-width: 500px) { /* screen size until 500px */
     body {
         font-size: 0.8em; /* 0.8x default size */
+    }
+
+    .textbox{
+        width: 450px;
     }
 }
