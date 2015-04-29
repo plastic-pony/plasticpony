@@ -194,6 +194,10 @@ h2 {
     cursor: pointer;
 }
 
+#m11:hover, #m12:hover, #m21:hover, #m22:hover, #m31:hover, #m32:hover {
+    color: #FF7000;
+}
+
 .textbox {
     width: 800px;
     margin: 50px auto;

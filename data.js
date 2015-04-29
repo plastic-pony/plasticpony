@@ -10,7 +10,7 @@
 
 var kino = {
     ime: "Kino KSET",
-    url: "http://kino.kset.org",
+    url: "http://kino.kset.org/2014/",
     urltxt: "kino.kset.org",
     img1: "images/kino1.jpg",
     img2: "images/kino2.jpg",
