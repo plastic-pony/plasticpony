@@ -194,6 +194,20 @@ h2 {
     cursor: pointer;
 }
 
+.textbox {
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+    .textbox div{
+        display: none;
+    }
+
+    .textbox div.hovered {
+        display: block;
+    }
+
 .naslovna {
     background-image: url(../images/naslovna.png);
     background-repeat: no-repeat;
@@ -208,6 +222,10 @@ h2 {
     background-position: top left;
     position: relative;
 }
+
+    .rep:hover {
+        background-image: url(../images/rep-color.png);
+    }
 
 @media all and (max-width: 1300px) { /* screen size until 1200px */
     body {
