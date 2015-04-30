@@ -194,7 +194,8 @@ h2 {
     cursor: pointer;
 }
 
-#m11:hover, #m12:hover, #m21:hover, #m22:hover, #m31:hover, #m32:hover {
+#m11:hover, #m12:hover, #m21:hover, #m22:hover, #m31:hover, #m32:hover, 
+#m11.hovered, #m12.hovered, #m21.hovered, #m22.hovered, #m31.hovered, #m32.hovered {
     color: #FF7000;
 }
 

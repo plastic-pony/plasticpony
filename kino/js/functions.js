@@ -1,31 +1,25 @@
 ﻿$('#m11, #movie11').hover(function () {
-    $('#disclaimer').toggleClass('hovered');
-    $('#movie11, .m11').toggleClass('hovered');
+    $('#disclaimer, #movie11, .m11, #m11').toggleClass('hovered');
 });
 
 $('#m12, #movie12').hover(function () {
-    $('#disclaimer').toggleClass('hovered');
-    $('#movie12, .m12').toggleClass("hovered");
+    $('#disclaimer, #movie12, .m12, #m12').toggleClass('hovered');
 });
 
 $('#m21, #movie21').hover(function () {
-    $('#disclaimer').toggleClass('hovered');
-    $('#movie21, .m21').toggleClass("hovered");
+    $('#disclaimer, #movie21, .m21, #m21').toggleClass('hovered');
 });
 
 $('#m22, #movie22').hover(function () {
-    $('#disclaimer').toggleClass('hovered');
-    $('#movie22, .m22').toggleClass("hovered");
+    $('#disclaimer, #movie22, .m22, #m22').toggleClass('hovered');
 });
 
 $('#m31, #movie31').hover(function () {
-    $('#disclaimer').toggleClass('hovered');
-    $('#movie31, .m31').toggleClass("hovered");
+    $('#disclaimer, #movie31, .m31, #m31').toggleClass('hovered');
 });
 
 $('#m32, #movie32').hover(function () {
-    $('#disclaimer').toggleClass('hovered');
-    $('#movie32, .m32').toggleClass("hovered");
+    $('#disclaimer, #movie32, .m32, #m32').toggleClass('hovered');
 });
 
 function preload(arrayOfImages) {
