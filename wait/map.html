@@ -29,9 +29,8 @@
                 <a class="navbar-brand" href="http://plasticpony.github.io/wait/"><img class="dogBack" src="images/dog-grey.png" /></a></div>
             <div class="navbar-collapse collapse pull-right">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Say Hi!</a></li>
-                    <li><a href="#">Map</a></li>
+                    <li><a href="http://plasticpony.github.io/wait/">Gallery</a></li>
+                    <li><a href="mailto:izabela.bratovic@gmail.com?subject=Hi!" target="_blank">Say Hi!</a></li>
                 </ul>
             </div>
         </div>
@@ -115,7 +114,7 @@
               ['images/dogs/15-01-26.jpg', 45.807457, 15.9543, 19],
               ['images/dogs/15-02-04.jpg', 45.801727, 15.959570, 20],
               ['images/dogs/15-02-05.jpg', 45.801727, 15.959570, 9],
-              ['images/dogs/15-02-18.jpg', 45.804620, 15.956784, 21],
+              ['images/dogs/15-02-18.jpg', 45.795528, 15.965126, 21],
               ['images/dogs/15-02-20.jpg', 45.799031, 15.961409, 22]
             ];
 
@@ -125,6 +124,7 @@
                 };
                 for (var i = 0; i < locations.length; i++) {
                     var beach = locations[i];
+                    var pas = beach[0];
                     var myLatLng = new google.maps.LatLng(beach[1], beach[2]);
                     var marker = new google.maps.Marker({
                         position: myLatLng,
@@ -133,6 +133,16 @@
                         title: beach[0],
                         zIndex: beach[3]
                     });
+
+                    var content = "<img class='mappedDog' src='" + pas + "' />";
+                    var infowindow = new google.maps.InfoWindow();
+
+                    google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {
+                        return function () {
+                            infowindow.setContent(content);
+                            infowindow.open(map, marker);
+                        };
+                    })(marker, content, infowindow));
                 }
             }
 
