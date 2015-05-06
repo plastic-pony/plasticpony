@@ -54,4 +54,5 @@ table {
         table td img {
             margin: 30px 15px;
             max-height: 70%;
+            max-width: 768px;
         }
