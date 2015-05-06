@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link href="css/styles.css" rel="stylesheet">
 
@@ -17,29 +18,39 @@
 </head>
 <body>
     <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 dog">
-                    <img src="images/dogs/13-08-31.jpg" />
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 dog">
-                    <img src="images/dogs/13-09-01.jpg" />
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 dog">
-                    <img src="images/dogs/13-09-01.jpg" />
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 dog">
-                    <img src="images/dogs/13-09-01.jpg" />
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 dog">
-                    <img src="images/dogs/13-09-01.jpg" />
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 dog">
-                    <img src="images/dogs/13-09-01.jpg" />
-                </div>
-            </div>
+        <div id="menu">
+            <p>Waiting dogs</p>
+            <a href="http://plasticpony.github.io/wait/map.html">Dog map</a><br />
+            <a href="http://plasticpony.github.io">Portfolio</a>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <img src="images/dogs/notsq/dog19.jpg" />
+                </td>
+                <td>
+                    <img src="images/dogs/notsq/dog22.jpg" />
+                </td>
+                <td>
+                    <img src="images/dogs/notsq/dog21.jpg" />
+                </td>
+                <td>
+                    <img src="images/dogs/notsq/dog20.jpg" />
+                </td>
+            </tr>
+        </table>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/mousewheel.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $("body").mousewheel(function (event, delta) {
+                this.scrollLeft -= (delta * 100);
+                event.preventDefault();
+            });
+        });
+    </script>
 </body>
 </html>

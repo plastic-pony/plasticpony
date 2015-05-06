@@ -1,0 +1,35 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;    
+    font-family: 'Metrophobic', sans-serif;
+}
+
+.body-content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-fixed-top {
+    opacity: 0.9;
+}
+
+.dogBack {
+    height: 35px;
+    margin-top: -7px;
+}
+
+.navbar {
+    color: #eeeeee;
+    font-size: 14px;
+}
+
+.mappedDog {
+    width: 110px;
+    height: 110px;
+}
